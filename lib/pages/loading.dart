@@ -14,13 +14,10 @@ class _LoadingState extends State<Loading> {
     await instance.getText();
 
     //print(instance.text);
-
-    // Navigator.pushReplacementNamed(context, '/home', arguments: {
-    //   'location': instance.location,
-    //   'flag': instance.flag,
-    //   'time': instance.time,
-    //   'isDayTime': instance.isDayTime,
-    // });
+    Navigator.pushReplacementNamed(context, '/home', arguments: {
+      'text': instance.text,
+      'number': instance.number,
+    });
   }
 
   @override
@@ -32,7 +29,7 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[800],
+      backgroundColor: Colors.purple[700],
       body: Center(
         child: SpinKitThreeBounce(
           color: Colors.white,
