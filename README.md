@@ -1,4 +1,4 @@
-<img style="width:100%;" src="public/images/cover.png"><img>
+<img style="width:100%;" src="cover.png"><img>
 
 # Cool Numbers
 
