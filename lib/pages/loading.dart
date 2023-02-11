@@ -1,6 +1,6 @@
 import 'package:cool_numbers/services/number.dart';
 import 'package:flutter/material.dart';
-import "package:cool_numbers/services/number.dart";
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class Loading extends StatefulWidget {
   @override
@@ -28,11 +28,16 @@ class _LoadingState extends State<Loading> {
     super.initState();
     setupWorldTime();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(
-        "Loading page",
+      backgroundColor: Colors.purple[800],
+      body: Center(
+        child: SpinKitThreeBounce(
+          color: Colors.white,
+          size: 80.0,
+        ),
       ),
     );
   }
